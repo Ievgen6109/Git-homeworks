@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<!-- Задача 0.1. На екран виводиться меню:
+1. Веселий
+2. Сумний
+3. Обурений -->
+
 <body>
+    <label for=""><br>
+        1. Веселий
+    </label><br>
+    <label for=""><br>
+        2. Сумний
+    </label><br>
+    <label for=""><br>
+        3. Обурений
+    </label><br>
+    <label for=""><br>
+        Номер пункту меню
+        <input id="num" type="number">
+    </label><br>
+    <button id="btn"><br>
+        Start
+    </button><br>
     
+    <script>
+        document.getElementById("btn").onclick = function () {
+            var num1 = parseInt(document.getElementById("num").value)
+            if (num1 == 1) {
+                document.write(' <img src="../Смайл/fun.jpg" alt="">')
+
+            } else {
+                if (num1 == 2) {
+                    document.write( '<img src="../Смайл/bored.png" alt="">')
+                } else {
+                    if (num1 == 3) {
+                        document.write( '<img src="../Смайл/angry.jpg" alt="">')
+                    } else { 
+                        document.write( 'ERROR')
+                    }
+                }
+
+            }
+        }
+    </script>
 </body>
+
 </html>
