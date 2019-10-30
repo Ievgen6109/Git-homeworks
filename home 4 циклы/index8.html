@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        do {
+            var a = Math.floor(Math.random() * 100),
+                b = +(Math.random() * 100).toFixed(0);
+            var res = prompt(a + '+' + b + '=', '')
+            if (res == null) {
+                if (confirm('Ви дійсно бажаєте вийти?')) {
+                    break
+                };
+            }
+        } while (a+b!=res);
+        if (res!=null){ alert('вірно')};
+    </script>
+</body>
+
+</html>

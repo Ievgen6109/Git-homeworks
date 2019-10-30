@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    hello World
+    <script>
+    do{
+        var a=Math.floor(Math.random()*100),
+        b=+(Math.random()*100).toFixed(0);
+        var res=+prompt(a+'+'+b+'=','');
+    } while((a+b!=res));
+    alert ('Вірно')
+    </script>
 </body>
 </html>
